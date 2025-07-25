@@ -26,7 +26,7 @@ set textwidth=0          " close auto enter
 set ruler                " cursor position displayed
 set laststatus=2         " show status
 set number               " show line number
-set relativenumber       " show relativenumber
+"set relativenumber       " show relativenumber
 set cursorline           " highlight current line
 set whichwrap+=<,>,h,l   " set the cursor key across rows
 set ttimeoutlen=0        " set <ESC> response time
@@ -159,8 +159,9 @@ Plug 'skywind3000/asyncrun.vim'
 " copilot
 Plug 'exafunction/codeium.vim', {'on': 'Codeium'}
 " vim-ai
-Plug 'chenxuan520/vim-ai-doubao', {'on': ['AIChat','AI','AIEdit','AIConfigEdit']}
-
+" Plug 'chenxuan520/vim-ai-doubao', {'on': ['AIChat','AI','AIEdit','AIConfigEdit']}
+" TeX plug
+Plug 'lervag/vimtex'
 call plug#end()
 
 " load vim default plugin
@@ -1177,3 +1178,7 @@ call AddMouseMenu(function('AITranMenu'))
 nnoremap <space>i :AIChat<space>
 xnoremap <space>i :AIChat<space>
 xnoremap <space>I :AIEdit<space>
+
+" TeX
+let g:tex_flavor = 'latex'
+let g:vimtex_quickfix_mode = 0
