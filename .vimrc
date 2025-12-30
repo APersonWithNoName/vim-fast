@@ -156,10 +156,6 @@ Plug 'rhysd/clever-f.vim'
 Plug 'honza/vim-snippets'
 " run shell in async
 Plug 'skywind3000/asyncrun.vim'
-" copilot
-Plug 'exafunction/codeium.vim', {'on': 'Codeium'}
-" vim-ai
-" Plug 'chenxuan520/vim-ai-doubao', {'on': ['AIChat','AI','AIEdit','AIConfigEdit']}
 " TeX plug
 Plug 'lervag/vimtex'
 call plug#end()
